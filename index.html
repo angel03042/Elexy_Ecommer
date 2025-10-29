@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/css/style.css" rel="stylesheet">
+    <title>elexy_ecommer</title>
+  </head>
+  <body class="">
+    <header class="">
+      <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-800/50 px-6 py-2.5 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 sm:px-3.5 sm:before:flex-1">
+        <div aria-hidden="true" class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+          <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-40"></div>
+        </div>
+        <div aria-hidden="true" class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+          <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-40"></div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm/6 text-gray-100">
+          <strong class="font-semibold">Elaxy 2025</strong><svg viewBox="0 0 2 2" aria-hidden="true" class="mx-2 inline size-0.5 fill-current"><circle r="1" cx="1" cy="1" /></svg>Unanse a nosotros en Diciembre del 7 al 9 de junio para ver lo que viene a continuación.
+          </p>
+          <!-- <a href="#" class="flex-none rounded-full bg-white/10 px-3.5 py-1 text-sm font-semibold text-white shadow-xs inset-ring-white/20 hover:bg-white/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Register now <span aria-hidden="true">&rarr;</span></a> -->
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:-outline-offset-4">
+          <span class="sr-only">Dismiss</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-gray-100">
+          <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+          </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="flex justify-between items-center bg-gray-800 px-8 py-4">
+        
+      </nav>
+      <section class="relative h-52 md:h-96 w-full overflow-hidden flex justify-center items-center bg-gray-100 group">
+        <!-- Botón Izquierda -->
+        <button id="btnPrev" class="opacity-0 xl:invisible duration-500 absolute left-4 z-10 bg-white/70 hover:bg-white rounded-full p-2 shadow-md cursor-pointer transition-all ease-out translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="#333" d="m10.108 12l4.246 4.246q.14.14.15.345q.01.203-.15.363t-.354.16t-.354-.16l-4.388-4.389q-.131-.13-.184-.267q-.053-.136-.053-.298t.053-.298t.184-.267l4.388-4.389q.14-.14.344-.15t.364.15t.16.354t-.16.354z"/></svg>
+        </button>
+
+        <!-- Contenedor de imágenes -->
+        <div id="carousel" class="flex transition-transform duration-700 ease-in-out w-full h-full">
+          
+        </div>
+
+        <!-- Botón Derecha -->
+        <button id="btnNext" class="opacity-0 xl:invisible duration-500 absolute right-4 z-10 bg-white/70 hover:bg-white rounded-full p-2 shadow-md cursor-pointer transition-all ease-out translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path fill="#333" d="M13.292 12L9.046 7.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16l4.388 4.389q.131.13.184.267t.053.298t-.053.298t-.184.268l-4.388 4.388q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354z"/></svg>
+        </button>
+      </section>
+    </header>
+    <div class="carousel-container">
+      <div class="carousel-content text-xs md:text-sm">
+        <p>Smart Shopping!</p>
+        <span>*</span>
+        <p>Shop More Save More</p>
+        <span>*</span>
+        <p>Welcome Users</p>
+        <span>*</span>
+        <p>Ofertas 50%</p>
+        <span>*</span>
+        <p>Ofertas Navideñas</p>
+        <span>*</span>
+        <p>Articulos Hogar</p>
+        <span>*</span>
+        <p>Moda Casual</p>
+        <span>*</span>
+        <p>Tecnologia</p>
+        <span>*</span>
+        <p>Smart Shopping!</p>
+        <span>*</span>
+        <p>Shop More Save More</p>
+        <span>*</span>
+        <p>Welcome Users</p>
+        <span>*</span>
+        <p>Ofertas 50%</p>
+        <span>*</span>
+        <p>Ofertas Navideñas</p>
+        <span>*</span>
+        <p>Articulos Hogar</p>
+        <span>*</span>
+        <p>Moda Casual</p>
+        <span>*</span>
+        <p>Tecnologia</p>
+        <span>*</span>
+        <p>Smart Shopping!</p>
+        <span>*</span>
+        <p>Shop More Save More</p>
+        <span>*</span>
+        <p>Welcome Users</p>
+        <span>*</span>
+        <p>Ofertas 50%</p>
+        <span>*</span>
+        <p>Ofertas Navideñas</p>
+        <span>*</span>
+        <p>Articulos Hogar</p>
+        <span>*</span>
+        <p>Moda Casual</p>
+        <span>*</span>
+        <p>Tecnologia</p>
+        <span>*</span>
+      </div>
+    </div>
+    <main class="mx-6 md:mx-18 xl:mx-28">
+      <section>
+        <article class="my-10">
+          <div class="text-center text">
+
+          </div>
+          <!--Categorias-->
+          <div class="categorias flex sm:justify-center gap-4 xl:gap-10 my-10 overflow-x-auto scrollbar-hide px-4">
+
+          </div>
+        </article>
+        <article class="my-10">
+          <div class="flex flex-col text-center md:text-start md:flex-row md:justify-between md:items-end">
+            <div class="">
+              <p class="text-lg md:text-2xl font-bold mb-4">Highly Recommended</p>
+              <p class="text-xs xl:text-sm opacity-75 md:w-1/2 xl:w-2/3">Productos recomendados y los mas comprados, envios a todos el pais contando con envio gratis en tu primera compra.</p>
+            </div>
+            <a href="src/pages/todos_productos.html" class="border-1 px-4 py-2 rounded-full text-xs xl:text-sm font-medium opacity-80 mt-4 md:mt-auto">Products All</a>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-4 xl:gap-10 my-10 productoContenedor">
+            <!--Product card-->
+            
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-gray-950 h-60 sm:h-80 w-full flex justify-center flex-col items-center gap-10">
+        <div class="flex items-center justify-center flex-wrap gap-6 sm:gap-12 text-white text-xs sm:text-sm">
+          <a href="" class="duration-100 hover:opacity-100 opacity-65">About</a>
+          <a href="" class="duration-100 hover:opacity-100 opacity-65">Blog</a>
+          <a href="" class="duration-100 hover:opacity-100 opacity-65">Jobs</a>
+          <a href="" class="duration-100 hover:opacity-100 opacity-65">Press</a>
+          <a href="" class="duration-100 hover:opacity-100 opacity-65">Accessibility</a>
+        </div>
+        <div class="flex items-center gap-10">
+          <a href=""><img class="w-8 duration-150 opacity-50 hover:opacity-100" src="src/assets/instagram_dark.svg" alt=""></a>
+          <a href=""><img class="w-8 duration-150 opacity-50 hover:opacity-100" src="src/assets/github_dark.svg" alt=""></a>
+          <a href=""><img class="w-8 duration-150 opacity-50 hover:opacity-100" src="src/assets/x_dark.svg" alt=""></a>
+        </div>
+        <p class="opacity-55 text-gray-100 text-xs sm:text-sm">@ 2025 Your Company, Inc. All rights reserved</p>
+    </footer>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

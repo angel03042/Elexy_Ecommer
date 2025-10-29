@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/css/style.css" rel="stylesheet">
+    <title>elexy_ecommer</title>
+</head>
+<body>
+    <nav class="flex justify-between items-center bg-gray-800 px-8 py-4"></nav>
+    <section class="mx-4 my-4 md:mx-14 xl:my-16 xl:mx-24">
+        <article class="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-16">
+            <!--Contenedor de las IMG-->
+            <div class="w-full h-96 flex flex-col-reverse xl:flex-row gap-2 overflow-hidden">
+                <!--Lista de imagenes del producto-->
+                <div class="xl:w-20 h-14 xl:h-full w-full overflow-x-hidden flex xl:flex-col gap-2">
+                    <button id="btn1" class="bg-gray-300 rounded-xs h-full xl:h-auto w-8 xl:w-full font-bold cursor-pointer"><</button>
+                    <div id="containerImg" class="xl:w-full flex xl:flex-col gap-2">
+                       
+                    </div>
+                    <button id="btn2" class="bg-gray-300 rounded-xs h-full xl:h-auto w-8 xl:w-full font-medium cursor-pointer">></button>
+                </div>
+                <!--IMG del producto-->
+                <div id="contenedorImg" class="flex w-full h-full justify-center items-center cursor-zoom-in overflow-hidden relative">
+                    <img id="imagenProducto" class="h-full duration-200" src="" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4">
+                      <p id="categoriaNombre" class="text-xs bg-gray-200 w-max px-4 py-2 rounded-full opacity-65 mb-2"></p>
+                      <p id="agotado" class="hidden text-xs text-white bg-red-500 w-max px-4 py-2 rounded-full mb-2">Agotado</p>
+                    </div>
+                    <p id="nombreProducto" class="text-2xl font-medium"></p>
+                    <p id="precioProducto" class="text-2xl font-bold mt-2"></p>
+                    <div class="flex flex-col gap-2 mt-4">
+                        <div class="flex items-center gap-6">
+                          <p class="text-sm font-bold opacity-85">Cantidad</p>
+                          <p id="stockProducto" class="text-sm opacity-60"></p>
+                        </div>
+                        <div class="flex items-center gap-4 mt-2">
+                            <button id="btnMenos" class="bg-black text-white font-extrabold text-xl rounded-full w-8 h-8 cursor-pointer">-</button>
+                            <p id="cantidad" class="font-medium"></p>
+                            <button id="btnMas" class="bg-black text-white font-extrabold text-xl rounded-full w-8 h-8 cursor-pointer">+</button>
+                        </div>
+                    </div>
+                    <div id="atributosProducto" class="mt-6">
+                        
+                    </div>
+                </div>
+                <div class="w-full flex items-center gap-4 mt-6">
+                    <button class="bg-black text-white w-1/2 py-2 text-sm md:text-base rounded-full font-medium flex items-center justify-center gap-2 md:gap-4 cursor-pointer"><img class="w-6" src="/src/assets/whatsapp.svg" alt="">Comprar ahora</button>
+                    <button class="w-1/2 border-2 py-2 rounded-full font-medium cursor-pointer">Agregar al carrito</button>
+                </div>
+            </div>
+        </article>
+        <article class="mt-10 overflow-hidden">
+            <h6 class="text-lg font-bold opacity-85">Descripcion</h6>
+            <p id="descripcionProducto" class="whitespace-pre-wrap break-words mt-4 text-sm md:text-base"></p>
+        </article>
+    </section>
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* 1. El contenedor principal que recorta el contenido */
+.carousel-container {
+    width: 100%;
+    overflow: hidden; /* Oculta todo lo que se salga del contenedor */
+    background-color: black;
+    color: white;
+    padding: 1rem 0; /* py-4 */
+}
+
+/* 2. El contenedor que se mueve (el doble de ancho) */
+.carousel-content {
+    display: flex;
+    align-items: center; /* Centra verticalmente los items */
+    width: 200%; /* El doble de ancho por el contenido duplicado */
+    
+    /* Aplicamos la animación */
+    animation: scroll 15s linear infinite;
+    
+    /* Para que los <p> y <span> no se rompan en varias líneas */
+    white-space: nowrap; 
+}
+
+/* 3. Estilos para tus elementos (opcional, basado en tu HTML) */
+.carousel-content p {
+    padding: 0 1rem; /* Espacio alrededor del texto */
+}
+
+.carousel-content span {
+    color: #888; /* Un color para los separadores */
+    padding: 0 0.5rem;
+}
+
+/* 4. La animación de desplazamiento */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(-50%); /* Mover a la izquierda la mitad del ancho total */
+    }
+}
+
+/* Opcional: Pausar la animación al pasar el mouse */
+/* .carousel-container:hover .carousel-content {
+    animation-play-state: paused;
+} */
+
+/* Ocultar scroll categorias en movil */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
