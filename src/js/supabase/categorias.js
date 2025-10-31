@@ -24,7 +24,7 @@ export async function cargarCategorias(supabase) {
   data.forEach((element) => {
     const divCategorias = document.createElement("a");
     divCategorias.className = "flex flex-col items-center flex-shrink-0";
-    divCategorias.href = `/public/pages/categorias.html?categoriaId=${element.id}&categoriaName=${encodeURIComponent(element.nombre)}&categoriaDescripcion=${encodeURIComponent(element.descripcion)}`;
+    divCategorias.href = `/pages/categorias.html?categoriaId=${element.id}&categoriaName=${encodeURIComponent(element.nombre)}&categoriaDescripcion=${encodeURIComponent(element.descripcion)}`;
     divCategorias.innerHTML = `
               <img class="rounded-full w-16 h-16 md:w-18 md:h-18 lg:w-24 lg:h-24 xl:w-30 xl:h-30 object-cover transform transition" src="${element.imagen}" alt="">
               <p class="font-medium mt-2 text-xs xl:text-base">${element.nombre}</p>
