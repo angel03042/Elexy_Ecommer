@@ -60,7 +60,7 @@ export async function cargarProductos(supabase) {
 
   data.forEach((element) => {
     const producto = document.createElement("a");
-    producto.href = `/src/pages/productos.html?productoId=${element.id}`;
+    producto.href = `/public/pages/productos.html?productoId=${element.id}`;
     producto.className =
       "overflow-hidden h-[300px] xl:h-[380px] cursor-pointer";
 
