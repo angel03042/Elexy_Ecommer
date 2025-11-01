@@ -75,7 +75,7 @@ export function filtrarSearch(supa) {
     `;
 
       div.addEventListener("click", () => {
-        window.location.href = `/pages/search_producto.html?search=${element.nombre}`;
+        window.location.href = `/src/pages/search_producto.html?search=${element.nombre}`;
       });
 
       container.appendChild(div);
