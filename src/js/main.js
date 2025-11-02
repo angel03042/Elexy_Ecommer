@@ -1,8 +1,8 @@
 import "../css/style.css";
 import { createClient } from "@supabase/supabase-js";
-import { filtrarSearch } from '../utils/filtros'
-import { ofertas } from './supabase/ofertas'
-import { headerImg } from '../utils/header'
+import { filtrarSearch } from "../utils/filtros";
+import { ofertas } from "./supabase/ofertas";
+import { headerImg } from "../utils/header";
 import { nav } from "../view/nav";
 import { cargarCategorias } from "./supabase/categorias";
 import { cargarProductos } from "./supabase/productos";
@@ -13,22 +13,33 @@ const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
 const supa = createClient(supabaseUrl, supabaseKey);
 
+// Ocultar Anuncio en la parte inferior del header
+function anuncio() {
+  const anuncio = document.querySelector("#anuncioHeader");
+  const btnAnuncio = document.querySelector("#btnAnuncioDelete");
+
+  btnAnuncio.addEventListener("click", () => {
+    anuncio.classList.add("hidden");
+  });
+}
+
 // Insertar Navegacion
 document.querySelector("nav").innerHTML = nav;
 
 // Funcion Filtrar Productos Nombre
-filtrarSearch(supa)
+filtrarSearch(supa);
 
 // Cargar los archivos
 document.addEventListener("DOMContentLoaded", async () => {
   const currentPage = window.location.pathname;
 
   try {
-    if (currentPage.includes("index.html") || currentPage === '/') {
+    if (currentPage.includes("index.html") || currentPage === "/") {
       await ofertas(supa);
-      headerImg()
+      anuncio()
+      headerImg();
     }
-    
+
     if (
       currentPage.includes("index.html") ||
       currentPage.includes("categorias.html") ||
